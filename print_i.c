@@ -26,7 +26,7 @@ int print_i(va_list arg)
 	for (; n / num > 9; )
 		num *= 10;
 
-	for (; num != 0)
+	for (; num != 0; )
 	{
 		count += _putchar('0' + n / num);
 		n %= num;
