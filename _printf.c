@@ -48,6 +48,11 @@ int specifier_check(char c, va_list arg)
 
 	spec_t specifiers[] = {
 		{'c', print_c},
+		{'s', print_s},
+		{'d', print_d},
+		{'i', print_d},
+		{'b', print_b},
+		{'u', print_u},
 		{'\0', NULL}
 	};
 

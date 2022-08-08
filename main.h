@@ -14,6 +14,7 @@ int print_c(va_list arg);
 int print_s(va_list arg);
 int print_d(va_list);
 int print_b(va_list);
+int print_u(va_list);
 char *convert_number(int64_t num, int base);
 int _pow(int, int);
 int _putchar(char c);
