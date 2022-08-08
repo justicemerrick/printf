@@ -34,6 +34,13 @@ int _printf(const char *format, ...)
 	return (counter_var);
 }
 
+/**
+ * specifier_check - function to find out the format specifier
+ * @c: a char which is the specifier
+ * @arg: a va_list variable
+ *
+ * Return: an integer
+ */
 int specifier_check(char c, va_list arg) 
 {
 	int i = 0;
@@ -56,10 +63,3 @@ int specifier_check(char c, va_list arg)
 	return (count);
 }
 
-int print_c(va_list arg)
-{
-	char ch = va_arg(arg, int);
-	_putchar(ch);
-
-	return (1);
-}
