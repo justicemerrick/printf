@@ -3,6 +3,7 @@
 /**
  * print_d - prints a number in decimal
  * @arg: a va_list type variable
+ * @buffer: pointer to a char
  *
  * Return: an integer
  */
@@ -21,8 +22,8 @@ int print_d(va_list arg)
 	}
 	else
 	{
-	n = num;
-	n1 = num;
+		n = num;
+		n1 = num;
 	}
 	while(n)
 	{

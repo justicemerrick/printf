@@ -22,7 +22,7 @@ int print_u(va_list arg)
 	while (i >= 0)
 	{
 		j = (u / _pow(10, i)) % 10;
-		_putchar('0' + j);
+		_putchar(('0' + j));
 		count++;
 		i--;
 	}

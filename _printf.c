@@ -53,6 +53,11 @@ int specifier_check(char c, va_list arg)
 		{'i', print_d},
 		{'b', print_b},
 		{'u', print_u},
+		{'x', print_x},
+		{'X', print_X},
+		{'S', print_S},
+		{'p', print_p},
+		{'o', print_o},
 		{'\0', NULL}
 	};
 
@@ -64,6 +69,12 @@ int specifier_check(char c, va_list arg)
 			break;
 		}
 		i++;
+	}
+	if (specifiers[i].c == '\0' && c != '%')
+	{
+		_putchar('%');
+		_putchar(c);
+		count += 2;
 	}
 	return (count);
 }
