@@ -6,11 +6,10 @@
  *
  * Return: a pointer to char
  */
-char *convert_number(uint64_t num, int base)
+char *convert_number(int64_t num, int base)
 {
 	char *output = malloc(65);
-	int i = 0, j = 0;
-	uint64_t rem;
+	int i = 0, j = 0, rem;
 	int buffer[65];
 
 	if (num < 0)

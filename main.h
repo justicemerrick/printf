@@ -4,7 +4,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdint.h>
 
 typedef struct specifier
 {
@@ -22,8 +21,8 @@ int print_X(va_list);
 int print_S(va_list);
 int print_p(va_list);
 int print_o(va_list);
-char *convert_number(uint64_t num, int base);
-char *convert_numberupper(uint64_t num, int base);
+char *convert_number(int64_t num, int base);
+char *convert_numberupper(int64_t num, int base);
 int _pow(int, int);
 int _putchar(char c);
 int _printf(const char *format, ...);
