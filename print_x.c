@@ -3,7 +3,6 @@
 /**
  * print_x - function to print an unsigned hexadecimal
  * @arg: a va_list variable
- * @buffer: pointer to a char
  *
  * Return: an integer
  */

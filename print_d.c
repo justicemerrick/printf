@@ -3,7 +3,6 @@
 /**
  * print_d - prints a number in decimal
  * @arg: a va_list type variable
- * @buffer: pointer to a char
  *
  * Return: an integer
  */
@@ -25,7 +24,7 @@ int print_d(va_list arg)
 		n = num;
 		n1 = num;
 	}
-	while(n)
+	while (n)
 	{
 		n = n / 10;
 		i++;
@@ -33,7 +32,7 @@ int print_d(va_list arg)
 	i--;
 	while (i >= 0)
 	{
-		j = (n1 /_pow(10, i)) % 10; 
+		j = (n1 / _pow(10, i)) % 10;
 		_putchar('0' + j);
 		count++;
 		i--;

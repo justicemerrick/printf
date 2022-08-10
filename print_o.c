@@ -12,7 +12,8 @@ int print_o(va_list arg)
 	unsigned int num = va_arg(arg, unsigned int);
 	int i = 0, count = 0;
 	char *ptr;
-	if(num)
+
+	if (num)
 	{
 		ptr = convert_number(num, 8);
 		while (ptr[i])

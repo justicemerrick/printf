@@ -1,9 +1,16 @@
 #include "main.h"
-
-char *convert_number(int64_t num, int base)
+/**
+ * convert_number - converts an unsigned number in any base to a string
+ * @num: an unsigned integer
+ * @base: base to convert to
+ *
+ * Return: a pointer to char
+ */
+char *convert_number(uint64_t num, int base)
 {
 	char *output = malloc(65);
-	int i = 0, rem,j = 0;
+	int i = 0, j = 0;
+	uint64_t rem;
 	int buffer[65];
 
 	if (num < 0)

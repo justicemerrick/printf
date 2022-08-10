@@ -14,7 +14,7 @@ int print_p(va_list arg)
 	int count = 0, i = 0;
 
 	str = convert_number(val, 16);
-	if(*(str + i))
+	if (*(str + i))
 	{
 		_putchar('0');
 		_putchar('x');

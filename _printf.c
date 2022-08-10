@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
  *
  * Return: an integer
  */
-int specifier_check(char c, va_list arg) 
+int specifier_check(char c, va_list arg)
 {
 	int i = 0;
 	int count = 0;
@@ -61,6 +61,12 @@ int specifier_check(char c, va_list arg)
 		{'\0', NULL}
 	};
 
+	if (c == '%')
+	{
+		_putchar('%');
+		count++;
+		return (count);
+	}
 	while (specifiers[i].c != '\0')
 	{
 		if (c == specifiers[i].c)

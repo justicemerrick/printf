@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_S - prints a string, print \x followed by ASCII code value in hexadecimal 
+ * print_S - prints a string, print \x followed by ASCII code
+ * value in hexadecimal
  * @arg: a va_list variable
  *
  * Return: an integer
@@ -26,12 +27,12 @@ int print_S(va_list arg)
 				nd++;
 				k++;
 			}
-			if(nd < 2)
+			if (nd < 2)
 			{
 				_putchar('0');
 				count++;
 			}
-			for(k = 0; k < 2; k++)
+			for (k = 0; k < 2; k++)
 			{
 				_putchar(*(p + k));
 				count++;

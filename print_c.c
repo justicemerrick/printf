@@ -2,7 +2,7 @@
 
 /**
  * print_c - function to print a char
- * @c: char to print
+ * @arg: char to print
  *
  * Return: an integer
  */
