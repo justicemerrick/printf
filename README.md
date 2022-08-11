@@ -1,1 +1,1 @@
-# This is a readme for the printf collaboration project.
+# This is a readme for the printf collaboration project by Justice Merrick and Iruoma Inyoi.
